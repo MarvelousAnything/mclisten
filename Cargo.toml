@@ -1,0 +1,21 @@
+[package]
+name = "mclisten"
+version = "0.1.0"
+edition = "2021"
+
+[env]
+RUST_LOG = "trace"
+
+[dependencies]
+clap = { version = "4.0.29", features = ["derive"] }
+color-eyre = "0.6.2"
+log = "0.4.17"
+mc-varint = { git = "https://github.com/luojia65/mc-varint" }
+num-bigint = { version = "0.4.3", features = ["serde"] }
+pretty_env_logger = "0.4.0"
+serde = { version = "1.0.149", features = ["derive"] }
+sha1 = "0.10.5"
+thiserror = "1.0.37"
+tokio = { version = "1.23.0", features = ["full"] }
+csv = "1.1.6"
+lazy_static = "1.4.0"
